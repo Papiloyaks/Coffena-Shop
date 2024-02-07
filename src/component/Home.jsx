@@ -49,7 +49,7 @@ const Home = () => {
           <p className='text-light'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolorem eligendi fugiat necessitatibus aperiam <br /> qui atque quas et? Ullam aspernatur sunt </p>
           <a href="/">
       {/* <button class="bn53">Buy Now</button> */}
-      <a href="/"><button class="bn632-hover bn19">Button</button></a>
+      <a href="/"><button class="bn632-hover bn19">Buy Now</button></a>
       </a>
       </div>
         </div>
