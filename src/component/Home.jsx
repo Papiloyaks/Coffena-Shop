@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
       <div>
-        <nav className="bg-black">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
+        <nav className="bg-black fixed w-full">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5 position-fixed">
             <a href="#">
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
@@ -91,7 +91,7 @@ const Home = () => {
         <div className="back">
           {/* <img classNameName='w-fit' src={home} alt="" /> */}
           <div className="text-white font-semibold text-orange-800 ms-10 py-20">
-            <h1 id="h1" className="text-7xl">
+            <h1 id="h1" className="text-7xl mt-40">
               Fresh Coffee In <br /> The Morning
             </h1>
             <p className="text-light">

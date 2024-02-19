@@ -112,6 +112,10 @@
 
 }
 
+.dev{
+  background-color: rgb(135,67,29);
+}
+
 
 #select{
   background-color: rgb(200,121,65);
@@ -120,9 +124,13 @@
 }
 
 .bn53 {
-  background-color: #b81515;
+  background-color: rgb(219,203,189);
+  color: rgb(200, 121, 65);
+  font-size: 14px;
+  font-family: sans-serif;
   padding: 7px;
   width: 100px;
+  border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: bn53bounce 4s infinite;
   cursor: pointer;
@@ -163,34 +171,7 @@
   }
 }
 
-
-
-/*
-.bn60 {
-  background-color: #190c8d;
-  color: #ffffff;
-  font-size: 1.3em;
-  font-weight: 600;
-  position: relative;
-  outline: none;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  height: 55px;
-  width: 160px;
+.input{
+  background-color: rgb(200,121,65);
+  border: 0px;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
