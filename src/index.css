@@ -102,6 +102,15 @@
   
 }
 
+.backk{
+  background-image: url(./assets/images/smoke.png);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+
 #date{
   background-color:rgb(219,203,189);
   border-radius: 20px;
@@ -175,3 +184,5 @@
   background-color: rgb(200,121,65);
   border: 0px;
 }
+
+

@@ -1,32 +1,58 @@
-import React, { useEffect } from "react";
+import React from 'react'
 import logo from "../assets/images/logo.png";
-import ItemCounter from "../component/ItemCounter";
 import { Link } from 'react-router-dom';
-import Aos from "aos";
+import cofe from "../assets/images/cofe.jpg";
+import { FaPlus } from "react-icons/fa";
+import { RiSubtractLine } from "react-icons/ri";
+import { useState } from "react";
+import Footer from './Footer';
 
 
-const Home = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 5000,
+const Book = () => {
+  const [quantity, setQuantity] = useState(1);
+  const itemPrice = 10; // Replace with the actual price of your item
 
-    });
-    
-  
-    return () => {
-      
+  const handleIncrement = () => {
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
+
+  const handleDecrement = () => {
+    if (quantity > -0) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
     }
-  }, [])
+  };
+
+  const calculateTotalPrice = () => {
+    return quantity * itemPrice;
+  };
+
+  const handlePayment = () => {
+    // Add your payment validation logic here
+    const total = calculateTotalPrice();
+
+    // For demonstration purposes, let's just log the total price
+    console.log(`Total Price: $${total}`);
+
+    // Add your actual payment processing logic here
+    // Example: Make an API call to process the payment
+    // api.processPayment(total)
+    //   .then(response => {
+    //     console.log('Payment successful', response);
+    //   })
+    //   .catch(error => {
+    //     console.error('Payment failed', error);
+    //   });
+  };
   return (
     <>
-      <div>
-        <nav className="bg-black fixed w-full">
+    <div>
+    <nav className="bg-black fixed w-full">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5 position-fixed">
             <a href="#">
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <Link to="./Book">
+              <Link to="./">
               <button 
                 id="bn632-hover bn19"
                 type="button"
@@ -97,32 +123,82 @@ const Home = () => {
             </div>
           </div>
         </nav>
-      </div>
-
-      <div className="">
-        <div className="back">
+    </div>
+    <section>
+    <div className="backk">
           {/* <img classNameName='w-fit' src={home} alt="" /> */}
-          <div className="text-white font-semibold text-orange-800 ms-10 py-20">
-            <h1 id="h1" className="text-7xl mt-40">
-              Fresh Coffee In <br /> The Morning
+          <center className="font-semibold text-gray-100 py-20">
+            <h1 className="text-7xl mt-40">
+              Book A Table
             </h1>
-            <p className="text-light">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
-              dolorem eligendi fugiat necessitatibus aperiam <br /> qui atque
-              quas et? Ullam aspernatur sunt{" "}
+            <p className="text-bold text-xl">Order any coffee flavour of your your choice</p>
+          </center>
+        </div>
+    </section>
+
+    <section className="grid lg-grid-cols-2 md:grid-cols-2 sm:grid-cols-3">
+        <div className="bg-black">
+          <img src={cofe} width={700} alt=""/>
+        </div>
+        <div className="bg-amber-800">
+          <div className="text-center py-10">
+            <h1 className="py-2 text-3xl text-white font-serif font-medium">
+              Know Your Bill
+            </h1>
+            <p className="w-90">
+              <hr />
             </p>
-            <a href="/">
-              {/* <button className="bn53">Buy Now</button> */}
+            <p className="p-3 text-xl font-serif text-white font-meduim">
+              Pick Your Flavour
+            </p>
+            <p className="text-white">
+              <select className="w-full border-0 text-center mt-5" id="select">
+                <option className="text-white">Vanilla</option>
+                <option value="">Chocolate</option>
+                <option value="">Caffe Mocha</option>
+                <option value="">Caramel</option>
+                <option value="">Berry</option>
+                <option value="">Irish Cream</option>
+              </select>
+            </p>
+            <div className="mt-5">
+              <p className="text-white text-xl font-serif">
+                Quantity: {quantity}
+              </p>
+              <p id="select" className="mt-5">
+                <button
+                  className=" text-sm rounded p-1 bg-black text-white hover:bg-white hover:text-black"
+                  onClick={handleDecrement}
+                >
+                  <RiSubtractLine />
+                </button>
+                <button
+                  className="rounded p-1 bg-black text-white ms-2 text-sm hover:bg-white hover:text-black"
+                  onClick={handleIncrement}
+                >
+                  <FaPlus />
+                </button>
+              </p>
+            </div>
+            <div className="mt-5">
               <a href="/">
-                <button className="bn632-hover bn19">Buy Now</button>
+                <button class="bn53" onClick={handlePayment}>Validate</button>
               </a>
-            </a>
+            </div>
+            <h4 className="mt-4 text-lg font-meduim font-serif text-white">
+              Your Bill is:
+            </h4>
+            <p className="mt-3">
+              {/* <span className="text-white text-xl font-serif">$0.00</span> */}
+              <span className="text-white text-xl font-serif">Total Price: ${calculateTotalPrice()}</span>
+            </p>
           </div>
         </div>
-      </div>
-      <ItemCounter />
-    </>
-  );
-};
+      </section>
+      <Footer/>
 
-export default Home;
+    </>
+  )
+}
+
+export default Book

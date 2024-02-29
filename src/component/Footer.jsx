@@ -3,6 +3,7 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { FaInstagramSquare } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import logo from '../assets/images/logo.png'
+import Foot from './Foot';
 
 
 
@@ -11,8 +12,8 @@ import logo from '../assets/images/logo.png'
 const Footer = () => {
   return (
     <>
-    <div>
-      <div className='center overflow-hidden'>
+    <div className='overflow-hidden'>
+      <div className='center'>
       <div data-aos="flip-left" className='grid lg-grid-cols-2 md:grid-cols-2 sm:grid-cols-3 '>
         <div className='p-10 bg-black'>
           <h1 className='text-xl font-meduim text-gray-300 text-xl font-bold mt-10'>Subcribe for our Newsletter</h1>
