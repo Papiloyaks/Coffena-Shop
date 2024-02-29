@@ -113,7 +113,7 @@ const Home = () => {
             </p>
             <a href="/">
               {/* <button className="bn53">Buy Now</button> */}
-              <a href="/">
+              <a href="/"> 
                 <button className="bn632-hover bn19">Buy Now</button>
               </a>
             </a>
