@@ -99,6 +99,7 @@
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
   
 }
 
@@ -107,9 +108,35 @@
   height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
 
   
 }
+
+.backkk{
+  background-image: url(./assets/images/blog.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+
+
+  
+}
+
+.backkkk{
+  background-image: url(./assets/images/pexel.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+
+
+  
+}
+
+
+
 
 #date{
   background-color:rgb(219,203,189);

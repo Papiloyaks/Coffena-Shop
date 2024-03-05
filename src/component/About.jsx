@@ -1,32 +1,20 @@
-import React, { useEffect } from "react";
+import React from 'react'
 import logo from "../assets/images/logo.png";
-import ItemCounter from "../component/ItemCounter";
 import { Link } from 'react-router-dom';
-import Aos from "aos";
+import Footer from './Footer';
 
 
-const Home = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 5000,
-
-    });
-    
-  
-    return () => {
-      
-    }
-  }, [])
+const About = () => {
   return (
     <>
-      <div>
-        <nav className="bg-black fixed w-full">
+    <div>
+    <nav className="bg-black fixed w-full">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5 position-fixed">
             <a href="#">
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <Link to="./Book">
+              <Link to="./book">
               <button 
                 id="bn632-hover bn19"
                 type="button"
@@ -79,7 +67,6 @@ const Home = () => {
                   </a>
                 </li>
                 </Link>
-                <Link to="./menu">
                 <li>
                   <a
                     href="#"
@@ -88,7 +75,6 @@ const Home = () => {
                     Menu
                   </a>
                 </li>
-                </Link>
                 <li>
                   <a
                     href="#"
@@ -101,32 +87,36 @@ const Home = () => {
             </div>
           </div>
         </nav>
-      </div>
-
-      <div className="">
-        <div className="back">
-          {/* <img classNameName='w-fit' src={home} alt="" /> */}
-          <div className="text-white font-semibold text-orange-800 ms-10 py-20">
-            <h1 id="h1" className="text-7xl mt-40">
-              Fresh Coffee In <br /> The Morning
+    </div>
+    <section>
+    <div>
+    <div className="backkk">
+          <center className="font-semibold text-gray-100 py-20">
+            <h1 className="text-5xl mt-40">
+            ABOUT US
             </h1>
-            <p className="text-light">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
-              dolorem eligendi fugiat necessitatibus aperiam <br /> qui atque
-              quas et? Ullam aspernatur sunt{" "}
-            </p>
-            <a href="/">
-              {/* <button className="bn53">Buy Now</button> */}
-              <a href="/"> 
-                <button className="bn632-hover bn19">Buy Now</button>
-              </a>
-            </a>
-          </div>
+          </center>
+    </div>
+    </div>
+    <center>
+        <h1 className='text-center'>A LITTLE ABOUT US</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit voluptate maiores voluptatem natus molestias sit placeat perferendis, expedita perspiciatis maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni itaque cumque quibusdam quas, amet cum aperiam architecto dolore sit, voluptatem alias dolores numquam consequatur ratione provident est minima? Laudantium?</p>
+        <div className='bg-red-300 py-10'> 
+            <div className='border'>
+                <h3>Our Missions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ex aspernatur explicabo soluta sint, corrupti nobis deleniti ipsa ullam consequatur quis error molestias voluptates quam! Quidem adipisci culpa laborum consequatur.</p>
+            </div>
+            <div className='border'>
+                <h3>Our Visions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ex aspernatur explicabo soluta sint, corrupti nobis deleniti ipsa ullam consequatur quis error molestias voluptates quam! Quidem adipisci culpa laborum consequatur.</p>
+            </div>
         </div>
-      </div>
-      <ItemCounter />
-    </>
-  );
-};
 
-export default Home;
+    </center>
+    </section>
+    <Footer/>
+    </>
+  )
+}
+
+export default About
