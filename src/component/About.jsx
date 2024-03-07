@@ -99,14 +99,16 @@ const About = () => {
     </div>
     </div>
     <center>
-        <h1 className='text-center'>A LITTLE ABOUT US</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit voluptate maiores voluptatem natus molestias sit placeat perferendis, expedita perspiciatis maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni itaque cumque quibusdam quas, amet cum aperiam architecto dolore sit, voluptatem alias dolores numquam consequatur ratione provident est minima? Laudantium?</p>
-        <div className='bg-red-300 py-10'> 
-            <div className='border'>
+      <div className='bg-black'>
+        <h1 className='text-xl font-semibold text-orange-400 p-5'>A LITTLE ABOUT US</h1>
+        <p id='lor' className='text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit voluptate maiores voluptatem natus molestias sit placeat perferendis, expedita perspiciatis maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni itaque cumque quibusdam quas, amet cum aperiam architecto dolore sit, voluptatem alias dolores numquam consequatur ratione provident est minima? Laudantium?</p>
+        </div>
+        <div id='lorr' className='bg-red-300 py-10'> 
+            <div id='lor' className='border'>
                 <h3>Our Missions</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ex aspernatur explicabo soluta sint, corrupti nobis deleniti ipsa ullam consequatur quis error molestias voluptates quam! Quidem adipisci culpa laborum consequatur.</p>
+                <p id=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ex aspernatur explicabo soluta sint, corrupti nobis deleniti ipsa ullam consequatur quis error molestias voluptates quam! Quidem adipisci culpa laborum consequatur.</p>
             </div>
-            <div className='border'>
+            <div id='lor' className='border'>
                 <h3>Our Visions</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ex aspernatur explicabo soluta sint, corrupti nobis deleniti ipsa ullam consequatur quis error molestias voluptates quam! Quidem adipisci culpa laborum consequatur.</p>
             </div>
