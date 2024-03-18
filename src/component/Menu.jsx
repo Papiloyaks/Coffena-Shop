@@ -109,82 +109,82 @@ const Menu = () => {
     </div>
 
     <center className="grid lg-grid-cols-3 md:grid-cols-3 sm:grid-cols-3 mt-10 bg-black">
-        <div>
-        <img src={blog} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Vanilla</p>
-        <div className=''>
-            <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <div className='p-2'>
+        <img className='w-72' src={blog} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-2'>Vanilla</p>
+        <div className='p-2'>
+            <button className='p-1 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-1 bg-gray-200 font-base font-serif rounded-xl text-amber-800 ms-2'>Add to cart</button>
         </div>
         </div>
         <div>
-        <img src={vani} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Hazelnut</p>
+        <img className='w-72' src={vani} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-2'>Hazelnut</p>
         <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <button className='p-1 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-1 bg-gray-200 ms-2 font-serif rounded-xl text-amber-800'>Add to cart</button>
         </div>
         </div>
         <div>
-        <img src={vanil} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Caramel</p>
+        <img className='w-72' src={vanil} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-2'>Caramel</p>
         <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
-        </div>
-        </div>
-
-        <div>
-        <img src={smoke} width={300} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Chocolate</p>
-        <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <button className='p-2 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-2 bg-gray-200 ms-2 font-serif rounded-xl text-amber-800'>Add to cart</button>
         </div>
         </div>
 
+        <div className='py-10'>
+        <img className='w-72' src={smoke} width={300} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-2'>Chocolate</p>
         <div>
-        <img src={mocha} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Caffe Mocha</p>
-        <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <button className='p-2 bg-amber-800  font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-2 bg-gray-200 ms-2 font-serif rounded-xl text-amber-800'>Add to cart</button>
         </div>
         </div>
 
+        <div className='py-10'>
+        <img className='w-72' src={mocha} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-5'>Caffe Mocha</p>
         <div>
-        <img src={ame} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Ameretto</p>
+        <button className='p-2 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-2 bg-gray-200 font-serif rounded-xl text-amber-800 ms-2'>Add to cart</button>
+        </div>
+        </div>
+
+        <div className='py-5'>
+        <img className='w-52' src={ame} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-4'>Ameretto</p>
         <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <button className='p-2 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-2 bg-gray-200 font-serif rounded-xl text-amber-800 ms-2'>Add to cart</button>
         </div>
         </div>
         {/* next */}
         <div>
-        <img src={cups} width={300} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Cappuccino</p>
+        <img className='w-72' src={cups} width={300} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-2'>Cappuccino</p>
         <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <button className='p-2 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-2 bg-gray-200 font-serif rounded-xl text-amber-800 ms-2'>Add to cart</button>
         </div>
         </div>
 
+        <div className='p-10'>
+        <img className='w-44' src={butter} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-2'>Butterscotch</p>
         <div>
-        <img src={butter} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Butterscotch</p>
-        <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <button className='p-2 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-2 bg-gray-200 font-serif rounded-xl text-amber-800 ms-2'>Add to cart</button>
         </div>
         </div>
 
+        <div className='p-10'>
+        <img className='w-52' src={grog} alt="" />
+        <p className='text-xl text-amber-800 font-serif p-2'>Grog</p>
         <div>
-        <img src={grog} alt="" />
-        <p className='text-xl text-orange-600 font-serif'>Grog</p>
-        <div>
-        <button className='p-2 bg-orange-500 font-semibold font-serif rounded-xl text-white'>Buy Now</button>
-            <button className='p-2 bg-gray-200 font-semibold font-serif rounded-xl text-white'>Add to cart</button>
+        <button className='p-2 bg-amber-800 font-serif rounded-xl text-white'>Buy Now</button>
+            <button className='p-2 bg-gray-200 font-serif ms-2 rounded-xl text-amber-800'>Add to cart</button>
         </div>
         </div>
     </center>

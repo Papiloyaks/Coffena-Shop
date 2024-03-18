@@ -4,7 +4,7 @@ const Foot = () => {
   return (
     <>
     <div className='bg-black'>
-        <h1 className='text-white text-center text-sm font-serif font-bold'>Links</h1>
+        <h1 className='text-white text-center text-sm font-serif font-bold p-10'>Links</h1>
         <div className='grid lg-grid-cols-12 md:grid-cols-6 sm:grid-cols-6 text-white text-center text-sm font-serif p-10'>
             <ul><a className='ms-5' href=""></a>Home</ul>
             <ul><a href=""></a>About us</ul>

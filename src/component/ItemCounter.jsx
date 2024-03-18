@@ -148,6 +148,7 @@ const ItemCounter = () => {
       </section>
         <div className="bg-black">
       <h1 className="text-gray-300 text-center p-10 text-2xl font-serif font-bold">WHAT PEOPLE SAY ABOUT US</h1>
+      <div className="justify-items-center">
       <center>
       <div className="grid lg-grid-cols-2 md:grid-cols-3 sm:grid-cols-3">
           <div className="dev p-3 w-96">
@@ -188,6 +189,7 @@ const ItemCounter = () => {
           </div>
           </div>
       </center>
+      </div>
         </div>  
       </div>
       <Footer/>

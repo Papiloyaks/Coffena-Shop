@@ -141,10 +141,6 @@
 
 }
 
-#lori{
-  
-}
-
 
 
 #date{
@@ -219,6 +215,21 @@
 .input{
   background-color: rgb(200,121,65);
   border: 0px;
+}
+
+.Bg{
+  background-color: rgb(135,67,29);
+}
+.B{
+  color: rgb(116, 58, 25);
+  font-size: 23px;
+  font-weight: 500;
+  font-family: serif;
+}
+
+.bg{
+  background-color: rgb(219,203,189);
+  font-size: 14px;
 }
 
 
