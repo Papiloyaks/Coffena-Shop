@@ -1,25 +1,13 @@
-import React, { useEffect } from "react";
+import React from 'react'
 import logo from "../assets/images/logo.png";
-import ItemCounter from "../component/ItemCounter";
-import { Link } from 'react-router-dom';
-import Aos from "aos";
+import { Link } from "react-router-dom";
+import phone from "../assets/images/phone.svg"
+import chat from "../assets/images/chat.png"
 
-
-const Home = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 5000,
-
-    });
-    
-  
-    return () => {
-      
-    }
-  }, [])
+const Contact = () => {
   return (
     <>
-      <div>
+     <div>
         <nav className="bg-black fixed w-full">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5 position-fixed">
             <a href="#">
@@ -104,31 +92,29 @@ const Home = () => {
           </div>
         </nav>
       </div>
-
-      <div className="">
-        <div className="back">
-          {/* <img classNameName='w-fit' src={home} alt="" /> */}
-          <div className="text-white font-semibold text-orange-800 ms-10 py-20">
-            <h1 id="h1" className="text-7xl mt-40">
-              Fresh Coffee In <br /> The Morning
-            </h1>
-            <p className="text-light">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
-              dolorem eligendi fugiat necessitatibus aperiam <br /> qui atque
-              quas et? Ullam aspernatur sunt{" "}
-            </p>
-            <a href="/">
-              {/* <button className="bn53">Buy Now</button> */}
-              <a href="/"> 
-                <button className="bn632-hover bn19">Buy Now</button>
-              </a>
-            </a>
+      <div>
+          <div className="backkks">
+            <center className="font-semibold py-20">
+              <h1 className="mt-40 font-serif text-5xl text-amber-600 p-10">Get in touch</h1>
+              <p className='-mt-10 text-white text-xl font-serif'>Want to get in touch? We love to hear from you.Here is how can reach us</p>
+            </center>
           </div>
         </div>
-      </div>
-      <ItemCounter />
+        <div className='grid lg-grid-cols-2 md:grid-cols-2 sm:grid-cols-2 bg-black py-10 justify-items-center'>
+          <center className='border bg-white w-2/3 p-10'><img src={phone} alt="" />
+          <p>Talk to Sales</p>
+          <p>Intrested in making a custom coffe flavour? Just pick up the phone to chat with a member of our sales team</p>
+          <p>+2349004560000</p>
+          <p><a href="">View all global numbers</a></p>
+          </center>
+          <center className='border bg-white w-2/3 p-10'><img src={chat} width={56} alt="" />
+          <p>Contact Customer Support</p>
+          <p>Sometimes you need a little help from your friends, or a Cafena support rep. Don't worry... we're here for you.</p>
+          <p><a className='border' href="">Contact Support</a></p>
+          </center>
+        </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Contact
