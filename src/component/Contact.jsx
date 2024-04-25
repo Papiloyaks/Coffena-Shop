@@ -101,16 +101,16 @@ const Contact = () => {
           </div>
         </div>
         <div className='grid lg-grid-cols-2 md:grid-cols-2 sm:grid-cols-2 bg-black py-10 justify-items-center'>
-          <center className='border bg-white w-2/3 p-10'><img src={phone} alt="" />
-          <p>Talk to Sales</p>
-          <p>Intrested in making a custom coffe flavour? Just pick up the phone to chat with a member of our sales team</p>
-          <p>+2349004560000</p>
-          <p><a href="">View all global numbers</a></p>
+          <center className='border bg-white w-2/3 p-10 bg-[#dbcbbd]'><img src={phone} width={56} alt="" />
+          <p className='text-[#c87941] text-xl p-2 font-semibold font-serif'>Talk to Sales</p>
+          <p className='text-black text-sm font-semibold'>Intrested in making a custom coffe flavour? Just pick up the phone to chat with a member of our sales team</p>
+          <p className='p-2 font-semibold'>+2349004560000</p>
+          <p><a className='text-xs border-0 hover:bg-black p-2 rounded bg-[#d87941] text-white' href="">View all global numbers</a></p>
           </center>
-          <center className='border bg-white w-2/3 p-10'><img src={chat} width={56} alt="" />
-          <p>Contact Customer Support</p>
-          <p>Sometimes you need a little help from your friends, or a Cafena support rep. Don't worry... we're here for you.</p>
-          <p><a className='border' href="">Contact Support</a></p>
+          <center className='border bg-white w-2/3 p-10 bg-[#dbcbbd]'><img src={chat} width={56} alt="" />
+          <p className='text-[#c87941] text-xl p-2 font-semibold font-serif'>Contact Customer Support</p>
+          <p  className='text-black text-sm font-semibold'>Sometimes you need a little help from your friends, or a Cafena support rep. Don't worry... we're here for you.</p>
+          <p className='mt-8'><a className='text-xs border-0 hover:bg-black p-2 rounded bg-[#d87941] text-white' href="">Contact Support</a></p>
           </center>
         </div>
     </>

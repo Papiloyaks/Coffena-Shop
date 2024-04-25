@@ -133,7 +133,7 @@ const ItemCounter = () => {
             </div>
             <div className="mt-5">
               <a href="/">
-                <button class="bn53" onClick={handlePayment}>Validate</button>
+                <button class="bn53 " onClick={handlePayment}>Validate</button>
               </a>
             </div>
             <h4 className="mt-4 text-lg font-meduim font-serif text-white">
