@@ -70,11 +70,11 @@ const ItemCounter = () => {
               Read More
             </button>
             <div className="grid grid-cols-3 my-10 gap-5 text-center">
-              <div id="date" className="h-40 p-11">
+              <div id="date" className="h-40 p-4">
                 <img id="date" src={date} alt="" />
                 <p>Quality Coffe</p>
               </div>
-              <div id="date" className=" h-40 p-8 gap-5">
+              <div id="date" className=" h-40 p-4 gap-5">
                 <img src={buid} alt="" />
                 <p>Our Branches</p>
               </div>
@@ -149,7 +149,7 @@ const ItemCounter = () => {
         <div className="bg-black">
       <h1 className="text-gray-300 text-center p-10 text-2xl font-serif font-bold">WHAT PEOPLE SAY ABOUT US</h1>
       <div className="justify-items-center">
-      <center className="m-auto p-10">
+      <center className="">
       <div className="grid lg-grid-cols-2 md:grid-cols-3 sm:grid-cols-3">
           <div className="dev p-3 w-96">
             <div className="">
