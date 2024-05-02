@@ -15,7 +15,7 @@ const About = () => {
       <div>
         <nav className="bg-black fixed w-full">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5 position-fixed">
-            <a href="#">
+            <a href="">
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -25,7 +25,7 @@ const About = () => {
                   type="button"
                   className="text-white w-40 bg-orange-400 hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
-                  Book Table
+                Book Table
                 </button>
               </Link>
               <button
@@ -60,7 +60,7 @@ const About = () => {
               <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 text-white font-serif font md:text-white-200 md:space-x-8 rtl: md:flex-row">
                 <li>
                   <a
-                    href="#"
+                    href="home"
                     className="block py-2 px-3 md:p-0 text-white rounded hover:bg-orange-400 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Home
