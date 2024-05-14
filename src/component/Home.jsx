@@ -36,7 +36,7 @@ const Home = () => {
                 type="button"
                 className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-white text-orange-400"
                 aria-controls="navbar-cta"
-                aria-expanded="false"
+                aria-expanded="true"
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
@@ -111,20 +111,19 @@ const Home = () => {
         <div className="back">
           {/* <img classNameName='w-fit' src={home} alt="" /> */}
           <div className="text-white font-semibold text-orange-800 ms-10 py-20">
-            <h1 id="h1" className="text-7xl mt-40">
+            <h1 id="h1" className="text-6xl mt-40">
               Fresh Coffee In <br /> The Morning
             </h1>
-            <p className="text-light">
+            <p className="text-base py-5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
-              dolorem eligendi fugiat necessitatibus aperiam <br /> qui atque
+              dolorem eligendi fugiat <br /> necessitatibus aperiam qui atque
               quas et? Ullam aspernatur sunt{" "}
             </p>
+            <Link to="/book">
             <a href="/">
-              {/* <button className="bn53">Buy Now</button> */}
-              <a href="/"> 
-                <button className="bn632-hover bn19">Buy Now</button>
-              </a>
+              <button className="bn53 bg-orange-400 hover:bg-black">Buy Now</button>
             </a>
+            </Link>
           </div>
         </div>
       </div>

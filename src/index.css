@@ -17,47 +17,6 @@
 }
 
 
-/* .bn632-hover {
-  width: 170px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align:center;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 10px;
-  moz-transition: all .4s ease-in-out; 
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-
-.bn632-hover:hover {
-  background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-
-.bn632-hover:focus {
-  outline: none;
-}
-
-.bn632-hover.bn19 {
-  background-image: linear-gradient(
-    to right,
-    #f5ce62,
-    #e43603,
-    #fa7199,
-    #e85a19
-  );
-  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
-} */
-
 
 .back{
   background-image: url(./assets/images/home.jpg);
@@ -142,12 +101,12 @@
 }
 
 .bn53 {
-  background-color: rgb(219,203,189);
   color: rgb(200, 121, 65);
-  font-size: 14px;
+  color: white;
+  font-size: 11px;
   font-family: sans-serif;
-  padding: 7px;
-  width: 100px;
+  padding: 10px;
+  width: 150px;
   border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
