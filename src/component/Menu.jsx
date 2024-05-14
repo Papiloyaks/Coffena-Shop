@@ -22,7 +22,7 @@ const Menu = () => {
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <Link to="./book">
+              <Link to="/book">
               <button 
                 id="bn632-hover bn19"
                 type="button"
@@ -57,6 +57,7 @@ const Menu = () => {
               id="navbar-cta"
             >
               <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 text-white font-serif font md:text-white-200 md:space-x-8 rtl: md:flex-row">
+                <Link to="/">
                 <li>
                   <a
                     href="#"
@@ -65,7 +66,9 @@ const Menu = () => {
                     Home
                   </a>
                 </li>
-                <Link to="./about">
+                </Link>
+
+                <Link to="/about">
                 <li>
                   <a
                     href="#"
@@ -75,7 +78,7 @@ const Menu = () => {
                   </a>
                 </li>
                 </Link>
-                <Link to="./menu">
+                <Link to="/">
                 <li>
                   <a
                     href="#"
@@ -85,6 +88,7 @@ const Menu = () => {
                   </a>
                 </li>
                 </Link>
+                <Link to="/contact">
                 <li>
                   <a
                     href="#"
@@ -93,6 +97,7 @@ const Menu = () => {
                     Contact
                   </a>
                 </li>
+                </Link>
               </ul>
             </div>
           </div>

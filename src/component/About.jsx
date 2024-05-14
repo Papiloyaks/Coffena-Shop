@@ -19,7 +19,7 @@ const About = () => {
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <Link to="./book">
+              <Link to="/book">
                 <button
                   id="bn632-hover bn19"
                   type="button"
@@ -58,15 +58,17 @@ const About = () => {
               id="navbar-cta"
             >
               <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 text-white font-serif font md:text-white-200 md:space-x-8 rtl: md:flex-row">
+                <Link to="/">
                 <li>
                   <a
-                    href="home"
+                    href="#"
                     className="block py-2 px-3 md:p-0 text-white rounded hover:bg-orange-400 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Home
                   </a>
                 </li>
-                <Link to="./about">
+                </Link>
+                <Link to="/about">
                   <li>
                     <a
                       href="#"
@@ -75,7 +77,8 @@ const About = () => {
                       About
                     </a>
                   </li>
-                </Link>
+                  </Link>
+                <Link to="/menu">
                 <li>
                   <a
                     href="#"
@@ -84,6 +87,8 @@ const About = () => {
                     Menu
                   </a>
                 </li>
+                </Link>
+                <Link to="/contact">
                 <li>
                   <a
                     href="#"
@@ -92,6 +97,7 @@ const About = () => {
                     Contact
                   </a>
                 </li>
+                </Link>
               </ul>
             </div>
           </div>

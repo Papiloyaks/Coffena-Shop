@@ -52,11 +52,11 @@ const Book = () => {
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <Link to="./">
+              <Link to="/book">
               <button 
                 id="bn632-hover bn19"
                 type="button"
-                className="text-white w-40 bg-orange-400 hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >Book Table</button></Link>
+                className="text-white w-40 bg-orange-400 hover:bg-black focus:ring-1 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center" >Book Table</button></Link>
               <button
                 data-collapse-toggle="navbar-cta"
                 type="button"
@@ -87,6 +87,7 @@ const Book = () => {
               id="navbar-cta"
             >
               <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 text-white font-serif font md:text-white-200 md:space-x-8 rtl: md:flex-row">
+                <Link to="/">
                 <li>
                   <a
                     href="#"
@@ -95,6 +96,8 @@ const Book = () => {
                     Home
                   </a>
                 </li>
+                </Link>
+                <Link to="/about">
                 <li>
                   <a
                     href="#"
@@ -103,6 +106,9 @@ const Book = () => {
                     About
                   </a>
                 </li>
+                </Link>
+
+                <Link to="/menu">
                 <li>
                   <a
                     href="#"
@@ -111,6 +117,9 @@ const Book = () => {
                     Menu
                   </a>
                 </li>
+                </Link>
+
+                <Link to="/contact">
                 <li>
                   <a
                     href="#"
@@ -119,6 +128,7 @@ const Book = () => {
                     Contact
                   </a>
                 </li>
+                </Link>
               </ul>
             </div>
           </div>

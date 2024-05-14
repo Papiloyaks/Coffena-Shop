@@ -26,7 +26,7 @@ const Home = () => {
               <img src={logo} className="h-20" alt="Flowbite Logo" />
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <Link to="./Book">
+              <Link to="/Book">
               <button 
                 id="bn632-hover bn19"
                 type="button"
@@ -61,6 +61,7 @@ const Home = () => {
               id="navbar-cta"
             >
               <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 text-white font-serif font md:text-white-200 md:space-x-8 rtl: md:flex-row">
+                <Link to="/">
                 <li>
                   <a
                     href="#"
@@ -69,6 +70,7 @@ const Home = () => {
                     Home
                   </a>
                 </li>
+                </Link>
                 <Link to="./about">
                 <li>
                   <a
