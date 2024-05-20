@@ -11,7 +11,6 @@ const Home = () => {
       duration: 5000,
 
     });
-    
   
     return () => {
       
@@ -107,7 +106,7 @@ const Home = () => {
         </nav>
       </div>
 
-      <div className="">
+      <div  data-aos="fade-right" className="">
         <div className="back">
           {/* <img classNameName='w-fit' src={home} alt="" /> */}
           <div className="text-white font-semibold text-orange-800 ms-10 py-20">

@@ -14,7 +14,7 @@ import Footer from "./Footer";
 
 const ItemCounter = () => {
   const [quantity, setQuantity] = useState(1);
-  const itemPrice = 10; // Replace with the actual price of your item
+  const itemPrice = 20; // Replace with the actual price of your item
 
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);

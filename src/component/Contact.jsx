@@ -1,10 +1,22 @@
-import React from 'react'
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import phone from "../assets/images/phone.svg"
 import chat from "../assets/images/chat.png"
+import Aos from "aos";
+import React, { useEffect } from 'react'
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 3000,
+
+    });
+    
+  
+    return () => {
+      
+    }
+  }, [])
   return (
     <>
      <div>
@@ -94,7 +106,7 @@ const Contact = () => {
           </div>
         </nav>
       </div>
-      <div>
+      <div data-aos="flip-left">
           <div className="backkks">
             <center className="font-semibold py-20">
               <h1 className="mt-40 font-serif text-5xl text-amber-600 p-10">Get in touch</h1>
